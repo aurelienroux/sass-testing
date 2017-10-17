@@ -2,7 +2,7 @@ h1 {
   color: $color-primary;
   border: 1px solid $color-secondary;
   padding: 20px;
-  li & {
+  .main & {
     color: $color-tertiary;
   }
   &-modifier{
