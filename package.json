@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/aurelienroux/sass-testing/issues"
   },
-  "homepage": "https://github.com/aurelienroux/sass-testing#readme"
+  "homepage": "https://github.com/aurelienroux/sass-testing#readme",
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1"
+  }
 }

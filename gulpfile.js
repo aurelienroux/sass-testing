@@ -7,7 +7,6 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var sourceMap = require('gulp-sourcemaps');
 //MISC
-var browserSync = require('browser-sync').create();
 var del = require('del');
 var plumber = require('gulp-plumber');
 
@@ -29,5 +28,5 @@ gulp.task('clean', function() {
 // Gulp defaut tasks
 gulp.task('default', ['sass'], function(){
   console.log("Default gulp task *-*-*-*")
-  gulp.watch('src/stylesSass/**/*.scss', ['sass']);
+  gulp.watch('src/styles/**/*.scss', ['sass']);
 });
