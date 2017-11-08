@@ -29,6 +29,13 @@ a {
   text-transform: uppercase;
   padding: $padding-medium;
   font-size: 1em;
+  &:hover {
+    color: $color-primary;
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 1;
+  }
 }
 
 .button {
