@@ -5,3 +5,20 @@ a {
     color: $color-secondary
   }
 }
+
+//extends button classes
+.btn {
+  border: 1px solid $color-secondary;
+  padding: $padding-medium;
+  font-size: 1em;
+}
+
+.btn-alert {
+  @extend .btn;
+  margin: $margin-large;
+}
+
+.btn-valid {
+  @extend .btn;
+  background: $color-primary;
+}
