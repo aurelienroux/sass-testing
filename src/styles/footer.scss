@@ -1,12 +1,15 @@
 footer {
   padding: 2em 0 0;
   height: 100px;
-  background-color: $color-tertiary;
+  background-color: $color-secondary;
   margin-top: 3.5em;
-  position: relative;
-  &::before {
-    @include skewed;
-    background-color: $color-primary;
-    top: -25px;
+  @include skewed {
+    border: 1px solid gold;
+  };
+}
+
+header {
+  @include skewed {
+    color: $color-primary;
   }
 }
