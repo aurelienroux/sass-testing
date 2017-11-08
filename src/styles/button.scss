@@ -8,17 +8,17 @@ a {
 
 //extends button classes
 .btn {
-  border: 1px solid $color-secondary;
+  border: 1px solid $color-tertiary;
   padding: $padding-medium;
   font-size: 1em;
 }
 
 .btn-alert {
   @extend .btn;
-  margin: $margin-large;
+  background: $color-secondary;
 }
 
 .btn-valid {
-  @extend .btn;
-  background: $color-primary;
+  @extend .btn-alert;
+  margin: $margin-large;
 }
