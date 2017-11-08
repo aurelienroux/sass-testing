@@ -1,3 +1,5 @@
+/* BUTTON STYLING ------------------------ */
+
 a {
   color: $color-primary;
   margin: $margin-medium;
@@ -6,7 +8,7 @@ a {
   }
 }
 
-//extends button classes
+//extends button classes ------------------------- /
 .btn {
   border: 1px solid $color-tertiary;
   padding: $padding-medium;
@@ -23,7 +25,7 @@ a {
   }
 }
 
-//extends button classes with placeholders
+//extends button classes with placeholders ---------- /
 %button {
   border: 1px solid $color-tertiary;
   text-transform: uppercase;

@@ -1,3 +1,9 @@
+/* TITLES STYLING -------------------------- */
+
+header {
+  @include skewed;
+}
+
 h1 {
   @include center;
   color: $color-primary;
