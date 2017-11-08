@@ -8,4 +8,5 @@ footer {
   @include skewed {
     border: 1px solid gold;
   };
+  @include center;
 }
