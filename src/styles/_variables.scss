@@ -1,11 +1,21 @@
+// Colors
 $color-primary: salmon;
 $color-secondary: lime;
 $color-tertiary: purple;
 
+// Margins
 $margin-medium: 50px;
 $margin-large: 100px;
 
 $padding-medium: 5px;
 $padding-large: 10px;
 
+// Layout
 $max-width: 1000px;
+
+
+// Breakpoints
+$break-xs: 575px;
+$break-sm: 576px;
+$break-md: 768px;
+$break-xl: 992px;
