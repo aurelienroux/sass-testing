@@ -1,0 +1,31 @@
+/* FUNCTIONS -------------------------- */
+
+@function divide($a, $b) {
+  @return ($a / $b);
+}
+
+.test {
+  line-height: divide(32px, 16px);
+}
+
+.test-two {
+  line-height: (32px / 16px);
+}
+
+
+// --------------
+
+// write a function that takes a px value and returns its % based on max-width
+@function px-to-pc($target, $context: $max-width) {
+  @return ($target / $context) * 100%;
+}
+
+// with default value
+.test-three {
+  width: px-to-pc(400px)
+}
+
+// with parameters
+.test-four {
+  width: px-to-pc(400px, 1200px)
+}
