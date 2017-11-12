@@ -5,8 +5,12 @@ footer {
   height: 100px;
   background-color: $color-secondary;
   margin-top: 3.5em;
+
   @include skewed {
     border: 1px solid $color-tertiary;
-  };
-  @include center;
+  }
+
+  @media screen and (min-width: 768px){
+    color: tomato;
+  }
 }
