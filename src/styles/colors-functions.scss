@@ -1,0 +1,25 @@
+/* COLORS FUNCTIONS -------------------------- */
+
+$base: gold;
+$base-dark: darken($base, 25%);
+$base-light: lighten($base, 25%);
+
+$complement: complement($base);
+$complement-light: lighten($complement, 20%);
+$complent-dark: darken($complement, 20%);
+
+.color-class {
+  background-color: $base;
+  h1 {
+    color: $base-dark;
+  }
+  h2 {
+    color: $base-light;
+  }
+  h3 {
+    color: $complement;
+  }
+  h4 {
+    color: rgba($complement, 0.5);
+  }
+}
