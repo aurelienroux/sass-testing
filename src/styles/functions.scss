@@ -1,5 +1,7 @@
 /* FUNCTIONS -------------------------- */
 
+
+// DIVIDE ------------------------------
 @function divide($a, $b) {
   @return ($a / $b);
 }
@@ -13,8 +15,7 @@
 }
 
 
-// --------------
-
+// CONVERTS TO % ------------------------------
 // write a function that takes a px value and returns its % based on max-width
 @function px-to-pc($target, $context: $max-width) {
   @return ($target / $context) * 100%;
@@ -28,4 +29,12 @@
 // with parameters
 .test-four {
   width: px-to-pc(400px, 1200px)
+}
+
+
+// FLEXBOX MARGIN LAYOUT ------------------------------
+@function per-line($items) {
+  $g-pct: px-to-pc($gutter) * 2;
+  $g-total: $items * $g-pct;
+  @return (100% / $items) - $g-total;
 }
