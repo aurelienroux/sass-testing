@@ -1,8 +1,7 @@
 /* FLEXBOX LAYOUT -------------------------- */
 
 .card {
-  display: flex;
-  flex-direction: column;
+  @include flexy($dir: column);
   padding: 1.5em 1em;
   border: 1px solid $color-primary;
   border-radius: 0.25em;
