@@ -22,3 +22,9 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+@mixin roundy($dim) {
+  width: $dim;
+  height: $dim;
+  border-radius: 50%;
+}
