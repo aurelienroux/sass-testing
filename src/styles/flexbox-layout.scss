@@ -14,17 +14,21 @@
   }
 
   // arrange layout with per-line function
-  @media (min-width: $break-sm) {
+  @include med-qur(sm) {
     flex: 1 per-line(2);
   }
-  @media (min-width: $break-xl) {
+
+  @include med-qur(md) {
     flex: per-line(3);
   }
+
 }
 
 .card-content {
   @include flexy($wrap: wrap);
-  @media (min-width: $break-sm) {
+
+  @include med-qur(md) {
     @include center(90%);
   }
+
 }
