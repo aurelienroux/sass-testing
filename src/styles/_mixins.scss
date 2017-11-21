@@ -1,5 +1,3 @@
-
-
 // ==========================================
 // Mixins
 // ==========================================
@@ -18,8 +16,8 @@
   }
 }
 
-@mixin center {
-  width: 90%;
+@mixin center($w) {
+  width: $w;
   max-width: $max-width;
   margin-left: auto;
   margin-right: auto;

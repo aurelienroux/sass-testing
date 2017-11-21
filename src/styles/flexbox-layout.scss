@@ -12,6 +12,9 @@
     margin: 0.35em 0 0;
     line-height: 1.25;
   }
+
+
+  // arrange layout with per-line function
   @media (min-width: $break-sm) {
     flex: 1 per-line(2);
   }

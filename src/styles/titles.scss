@@ -5,7 +5,7 @@ header {
 }
 
 h1 {
-  @include center;
+  @include center(90%);
   color: $color-primary;
   border: 1px solid $color-secondary;
   padding: 20px;
