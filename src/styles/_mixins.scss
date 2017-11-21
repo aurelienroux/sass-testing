@@ -52,17 +52,17 @@
       @content;
     }
   }
-  @else if $break == 'sm' {
+  @else if $break == 's' {
     @media (max-width: $break-sm) {
       @content;
     }
   }
-  @else if $break == 'md' {
+  @else if $break == 'm' {
     @media (max-width: $break-md) {
       @content;
     }
   }
-  @else if $break == 'xl' {
+  @else if $break == 'l' {
     @media (max-width: $break-xl) {
       @content;
     }

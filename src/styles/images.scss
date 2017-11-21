@@ -6,7 +6,7 @@
   position: relative;
   z-index: 100;
 
-  @include med-qur(xl) {
+  @include med-qur(l) {
     display: none;
   }
 
@@ -18,7 +18,7 @@
   position: relative;
   z-index: 100;
 
-  @include med-qur(md) {
+  @include med-qur(m) {
     display: none;
   }
 

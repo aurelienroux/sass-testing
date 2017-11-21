@@ -14,11 +14,11 @@
   }
 
   // arrange layout with per-line function
-  @include med-qur(sm) {
+  @include med-qur(s) {
     flex: 1 per-line(2);
   }
 
-  @include med-qur(md) {
+  @include med-qur(m) {
     flex: per-line(3);
   }
 
@@ -27,7 +27,7 @@
 .card-content {
   @include flexy($wrap: wrap);
 
-  @include med-qur(md) {
+  @include med-qur(m) {
     @include center(90%);
   }
 
