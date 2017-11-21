@@ -53,17 +53,17 @@
     }
   }
   @else if $break == 's' {
-    @media (max-width: $break-sm) {
+    @media (max-width: $break-s) {
       @content;
     }
   }
   @else if $break == 'm' {
-    @media (max-width: $break-md) {
+    @media (max-width: $break-m) {
       @content;
     }
   }
   @else if $break == 'l' {
-    @media (max-width: $break-xl) {
+    @media (max-width: $break-l) {
       @content;
     }
   }

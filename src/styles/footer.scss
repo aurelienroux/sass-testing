@@ -10,7 +10,7 @@ footer {
     border: 1px solid $color-tertiary;
   }
 
-  @media screen and (min-width: $break-sm){
+  @include med-qur(s) {
     color: tomato;
   }
 }
