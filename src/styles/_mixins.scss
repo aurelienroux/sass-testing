@@ -46,24 +46,19 @@
 
 
 //Media queries
+// get small value from maps and compare to see
+// which media query to apply
 @mixin med-qur($break) {
-  @if $break == 'xs' {
-    @media (max-width: map-get($breakpoints, 'xs')) {
+$value: map-get($breakpoints, $break);
+$s: map-get($breakpoints, 's');
+
+  @if $value < $s {
+    @media (max-width: $value) {
       @content;
     }
   }
-  @else if $break == 's' {
-    @media (min-width: $break-s) {
-      @content;
-    }
-  }
-  @else if $break == 'm' {
-    @media (min-width: $break-m) {
-      @content;
-    }
-  }
-  @else if $break == 'l' {
-    @media (min-width: $break-l) {
+  @else {
+    @media (min-width: $value) {
       @content;
     }
   }
