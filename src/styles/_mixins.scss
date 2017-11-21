@@ -23,9 +23,9 @@
   margin-right: auto;
 }
 
-@mixin roundy($dim, $border) {
+@mixin roundy($dim, $border: null) {
   width: $dim;
   height: $dim;
-  border: $border;
   border-radius: 50%;
+  border: $border;
 }
