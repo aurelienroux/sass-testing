@@ -9,3 +9,13 @@
     display: none;
   }
 }
+
+.img-featured-keywords {
+  @include roundy($border: 2px solid $color-secondary, $dim: 150px );
+  margin-top: 75px;
+  position: relative;
+  z-index: 100;
+  @media (max-width: $break-xs) {
+    display: none;
+  }
+}
