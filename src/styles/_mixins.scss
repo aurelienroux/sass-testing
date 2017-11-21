@@ -16,6 +16,7 @@
   }
 }
 
+// center elements with variable width
 @mixin center($w) {
   width: $w;
   max-width: $max-width;
@@ -23,9 +24,22 @@
   margin-right: auto;
 }
 
+// rounded images with border
 @mixin roundy($dim, $border: null) {
   width: $dim;
   height: $dim;
   border-radius: 50%;
   border: $border;
+}
+
+// flex container
+@mixin flexy(
+  $disp: flex,
+  $dir: null,
+  $wrap: null,
+  $just: null ) {
+  display: $disp;
+  flex-direction: $dir;
+  flex-wrap: $wrap;
+  justify-content: $just;
 }
