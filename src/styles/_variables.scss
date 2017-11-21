@@ -19,3 +19,10 @@ $break-xs: 575px;
 $break-s: 576px;
 $break-m: 768px;
 $break-l: 992px;
+
+$breakpoints: (
+  'xs': 575px,
+  's': 576px,
+  'm': 768px,
+  'l': 992px,
+)

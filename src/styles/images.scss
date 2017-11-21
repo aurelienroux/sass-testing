@@ -18,7 +18,7 @@
   position: relative;
   z-index: 100;
 
-  @include med-qur(m) {
+  @include med-qur(xs) {
     display: none;
   }
 

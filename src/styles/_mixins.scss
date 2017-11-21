@@ -48,22 +48,22 @@
 //Media queries
 @mixin med-qur($break) {
   @if $break == 'xs' {
-    @media (max-width: $break-xs) {
+    @media (max-width: map-get($breakpoints, 'xs')) {
       @content;
     }
   }
   @else if $break == 's' {
-    @media (max-width: $break-s) {
+    @media (min-width: $break-s) {
       @content;
     }
   }
   @else if $break == 'm' {
-    @media (max-width: $break-m) {
+    @media (min-width: $break-m) {
       @content;
     }
   }
   @else if $break == 'l' {
-    @media (max-width: $break-l) {
+    @media (min-width: $break-l) {
       @content;
     }
   }
