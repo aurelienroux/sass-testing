@@ -5,9 +5,11 @@
   margin-top: 75px;
   position: relative;
   z-index: 100;
-  @media (max-width: $break-xs) {
+
+  @include med-qur(xl) {
     display: none;
   }
+
 }
 
 .img-featured-keywords {
@@ -15,7 +17,9 @@
   margin-top: 75px;
   position: relative;
   z-index: 100;
-  @media (max-width: $break-xs) {
+
+  @include med-qur(md) {
     display: none;
   }
+
 }
