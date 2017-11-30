@@ -1,8 +1,14 @@
 /* FOR LOOPS -------------------------- */
 
-$teachers: (
+$family: (
     'aurelien',
     'david',
     'adrien',
     'nathan'
-)
+);
+
+@each $boy in $family {
+    .boy-#{$boy} {
+        background-image: url('img/#{$boy}');
+    }
+}
