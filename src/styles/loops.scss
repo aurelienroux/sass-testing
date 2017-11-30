@@ -4,11 +4,12 @@ $family: (
     'aurelien',
     'david',
     'adrien',
-    'nathan'
+    'nathan',
+    'stranger'
 );
 
 @each $boy in $family {
     .boy-#{$boy} {
-        background-image: url('img/#{$boy}');
+        background-image: url('img/#{$boy}.jpg');
     }
 }
