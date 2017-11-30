@@ -63,3 +63,13 @@ $s: map-get($breakpoints, 's');
     }
   }
 }
+
+
+// Colors
+@mixin themes($map) {
+  @each $themes, $color in $map {
+    &-#{$themes} {
+        color: $color;
+    }
+  }
+}

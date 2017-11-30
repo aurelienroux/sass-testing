@@ -10,3 +10,9 @@
         color: #{$color};
     }
 }
+
+/* MIXIN STYLE -------------------------- */
+
+.icn {
+    @include themes($themes);
+}
